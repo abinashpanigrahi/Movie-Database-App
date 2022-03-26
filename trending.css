@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,57,52,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+
+#navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #0c111b;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#navbar img{
+    width: 5%;
+    height: 90%;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    position: fixed;
+    left: 2%;
+}
+
+
+#trendingContainer{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+
+#trendingContainer h1{
+    color: #f6ede7;
+}
+
+#movieContainer{
+    width: 100%;
+    margin-top: 30px;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 30px;
+}
+
+.poster{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.movie{
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.movie:hover{
+    transform: scale(1.1);
+    transition: 0.3s all ease-in-out;
+}
+
+.title{
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    left: 5%;
+    font-size: 28px;
+    width: 90%;
+    display: none;
+}
+
+.movie:hover .title{
+    display: block;
+}
+
+.movie:hover .poster{
+    filter: brightness(0.3);
+}

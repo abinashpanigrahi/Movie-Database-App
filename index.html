@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css">
+    <title>Hotstar Movie Search</title>
+  </head>
+  <body>
+    <div id="navbar">
+        <img id="logo" src="https://pbs.twimg.com/profile_images/1243623122089041920/gVZIvphd_400x400.jpg" alt="logo">
+        <h2><a href="trending.html">See What's Trending?</a></h2>
+        <div id="searchDiv">
+          <h2>Search</h2>
+          <input type="text" id="search" placeholder="Search for movies...">
+          <button id="searchbtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+          </button>
+        </div>
+    </div>
+    <div id="banner">
+      <img src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/5GISMqlRXMEyBrgEqyvhaMMuQmJ.jpg" alt="banner">
+      <h1>Welcome.</h1>
+      <h2>Millions of movies, TV shows and people to discover. Explore now.</h2>
+    </div>
+    <h2 id="header">Showing Search Results....</h2>
+    <div id="movieContainer">
+
+    </div>
+    <div id="modalMovieContainer">
+        <div id="modalMovieBox">
+            <div id="close">&times;</div>
+            <div id="movieInfoDiv">
+                <div id="moviePoster">
+                    <img id="posterInfo" src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="">
+                </div>
+                <div id="movieInfo">
+                    <h1 id="movieInfoName"></h1>
+                    <p class="title">GENRE</p>
+                    <p class="titleText" id="genre"></p>
+                    <p class="title">CAST</p>
+                    <p class="titleText" id="cast"></p>
+                    <p class="title">PLOT</p>
+                    <p class="titleText" id="plot"></p>
+                    <p class="title">RELEASE DATE</p>
+                    <p class="titleText" id="release"></p>
+                    <p class="title">RUNTIME</p>
+                    <p class="titleText" id="runtime"></p>
+                    <p class="title">IMDb RATING</p>
+                    <p class="titleText" id="rating"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+
+<script src="homepage.js">
+</script>
